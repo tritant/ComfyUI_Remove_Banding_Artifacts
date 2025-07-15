@@ -11,7 +11,6 @@ A custom ComfyUI node that removes visible **banding artifacts** from latent ima
 - Supports multiple **samplers** and **schedulers**
 - Ultra Fast with the fp8 version of Flux.1-Dev original
 - Supersonic with Nunchaku chekpoint original
-- Works especially well with models like FLUX
 
 ---
 🖼 Example:
