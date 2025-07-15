@@ -28,7 +28,7 @@ class ResampleBandingFix:
     DESCRIPTION = "🧽 Fix banding artifacts by re-sampling the latent with a low denoise strength."
 
     def resample(self, latent, model, positive, negative, sampler, scheduler):
-        steps = 22  # Hardcoded
+        steps = 14  # Hardcoded
         denoise = 0.14  # Hardcoded
         cfg = 1.0  # Hardcoded
         seed = random.randint(0, 999_999_999)  # Hardcoded random seed
