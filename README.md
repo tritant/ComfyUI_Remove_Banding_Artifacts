@@ -17,5 +17,7 @@ A custom ComfyUI node that removes visible **banding artifacts** from latent ima
 Before, After
 
 <img width="2426" height="1232" alt="Capture d'écran 2025-07-15 002654" src="https://github.com/user-attachments/assets/7f574468-9d38-4ef2-b611-85229f3447ab" />
+<img width="2147" height="1165" alt="Capture d'écran 2025-07-15 140316" src="https://github.com/user-attachments/assets/8025adb5-8b9e-4cce-9943-66b9cc9ff2ca" />
+
 
 
