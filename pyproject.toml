@@ -1,7 +1,7 @@
 [project]
 name = "Remove-Banding-Artifacts"
 description = "Fix banding artifacts by re-sampling the latent with a low denoise strength."
-version = "1.0.0"
+version = "1.0.1"
 license = { file = "LICENSE.txt" }
 
 [project.urls]
