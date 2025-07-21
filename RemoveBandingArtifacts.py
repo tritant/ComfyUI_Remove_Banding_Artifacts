@@ -4,6 +4,11 @@ from comfy.sample import prepare_noise
 import random
 
 class ResampleBandingFix:
+
+    @classmethod
+    def IS_CHANGED(self, **kwargs):
+        return float("NaN")
+        
     @classmethod
     def INPUT_TYPES(cls):
         return {
