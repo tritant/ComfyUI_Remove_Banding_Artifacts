@@ -12,6 +12,7 @@ class ResampleBandingFix:
                 "model": ("MODEL",),
                 "positive": ("CONDITIONING",),
                 "negative": ("CONDITIONING",),
+                "denoise": ("FLOAT", {"default": 0.14, "min": 0.0, "max": 1.0, "step": 0.01}),
                 "sampler": ([
                     "euler", "euler_ancestral", "dpmpp_2m", "dpmpp_2m_sde", "deis", "heun"
                 ],),
@@ -27,9 +28,9 @@ class ResampleBandingFix:
     CATEGORY = "latent/enhancement"
     DESCRIPTION = "🧽 Fix banding artifacts by re-sampling the latent with a low denoise strength."
 
-    def resample(self, latent, model, positive, negative, sampler, scheduler):
+    def resample(self, latent, model, positive, negative, denoise, sampler, scheduler):
         steps = 14  # Hardcoded
-        denoise = 0.14  # Hardcoded
+        # denoise = 0.14  # This is now an input
         cfg = 1.0  # Hardcoded
         seed = random.randint(0, 999_999_999)  # Hardcoded random seed
 
