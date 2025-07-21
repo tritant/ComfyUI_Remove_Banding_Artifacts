@@ -17,7 +17,7 @@ class ResampleBandingFix:
                 "model": ("MODEL",),
                 "positive": ("CONDITIONING",),
                 "negative": ("CONDITIONING",),
-                "denoise": ("FLOAT", {"default": 0.14, "min": 0.0, "max": 1.0, "step": 0.01}),
+                "denoise": ("FLOAT", {"default": 0.22, "min": 0.0, "max": 1.0, "step": 0.01}),
                 "sampler": ([
                     "euler", "euler_ancestral", "dpmpp_2m", "dpmpp_2m_sde", "deis", "heun"
                 ],),
